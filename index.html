@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Tailwind CSS</title>
+    <title>Portfolio me</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/img/tritona.png">
     <link href="dist/css/final.css" rel="stylesheet" />
     <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
     </script>
   </head>
   <body>
@@ -20,7 +21,7 @@
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <a href="#home" class="block py-6 text-lg font-bold text-primary">sandhikagalih</a>
+            <a href="#home" class="block py-6 text-lg font-bold text-primary">NandaTritona</a>
           </div>
           <div class="flex items-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
@@ -41,8 +42,11 @@
                   <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Tentang Saya</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
+                  <a href="#certificate" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Sertifikat</a>
                 </li>
+                <li class="group">
+                    <a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
+                  </li>
                 <li class="group">
                   <a href="#clients" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Clients</a>
                 </li>
@@ -77,16 +81,16 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Sandhika Galih</span></h1>
-            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Lecturer & <span class="text-dark dark:text-white">Content Creator</span></h2>
-            <p class="mb-10 font-medium leading-relaxed text-secondary">Belajar web programming itu mudah dan menyenangkan bukan. <span class="font-bold text-dark dark:text-white">bukan!</span></p>
+            <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Nanda Tritona</span></h1>
+            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Web & <span class="text-dark dark:text-white">Mobile Developer</span></h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondary">Belajar pemograman itu mudah dan menyenangkan bukan. <span class="font-bold text-dark dark:text-white">bukan!</span></p>
 
             <a href="#" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-10 lg:right-0 lg:mt-9">
-              <img src="dist/img/sandhika.png" alt="Sandhika Galih" class="relative z-10 mx-auto max-w-full" />
-              <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+              <img src="dist/img/tritona.png" alt="nanda" class="relative z-10 mx-auto max-w-full" />
+              <!-- <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
                 <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="#14b8a6"
@@ -94,7 +98,7 @@
                     transform="translate(100 100) scale(1.1)"
                   />
                 </svg>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -108,32 +112,19 @@
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
             <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
-            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">Yuk, belajar web programming di WPU!</h2>
-            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id temporibus maiores sequi vitae saepe iusto deleniti!</p>
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">Full Stack Developer</h2>
+            <p class="mb-3 max-w-xl text-base font-medium text-secondary lg:text-lg">Saat ini saya bekerja di perusahaan <span class="text-white font-bold">PT Pulau Sambu</span>, sebagai Full Stack Web Developer & Mobile Developer.</p>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">Di bidang saya (Full Stack Developer), memiliki tugas dan bertanggung jawab dalam mengembangkan sebuah aplikasi atau sistem mulai dari perancangan user interface, pembuatan logic yang tersusun dari banyak code, manajemen database, hingga memastikan user experience berada pada kondisi yang baik.</p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">Mari berteman</h3>
             <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos, hic animi quasi ipsum exercitationem ipsam incidunt voluptatem.
+                Mari bangun silahturahmi bersama saya
             </p>
             <div class="flex items-center">
-              <!-- Youtube -->
-              <a
-                href="https://youtube.com/webprogrammingunpas"
-                target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              >
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>YouTube</title>
-                  <path
-                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                  />
-                </svg>
-              </a>
-
               <!-- Instagram -->
               <a
-                href="https://instagram.com/sandhikagalih"
+                href="https://instagram.com/nandathreetona"
                 target="_blank"
                 class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
@@ -147,7 +138,7 @@
 
               <!-- Twitter -->
               <a
-                href="https://twitter.com/sandhikagalih"
+                href="https://twitter.com/nandatritona"
                 target="_blank"
                 class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
@@ -161,7 +152,7 @@
 
               <!-- TikTok -->
               <a
-                href="https://tiktok.com/@sandhika.galih"
+                href="https://tiktok.com/@nandatritona"
                 target="_blank"
                 class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
@@ -175,7 +166,7 @@
 
               <!-- LinkedIn -->
               <a
-                href="https://linkedin.com/in/sandhikagalih"
+                href="https://linkedin.com/in/nanda-threetona-43a477276/"
                 target="_blank"
                 class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
@@ -193,6 +184,77 @@
     </section>
     <!-- About Section End -->
 
+    <!-- Serticate Section Start -->
+    <section id="certificate" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-16 max-w-xl text-center">
+                    <h4 class="mb-2 text-lg font-semibold text-primary">Serticate</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Kursus & Penghargaan</h2>
+                    <p class="text-md font-medium text-secondary md:text-lg">My Learning</p>
+                </div>
+            </div>
+    
+            <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                    <img src="dist/img/Certificate/Certificate3.png" alt="E-Commerce" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Fundamental Penetration Testing</h3>
+                    <p class="text-base font-semibold text-primary">Instructor: <a href="https://codingstudio.id/" class="font-medium text-secondary">Coding Studio Team</a></p>
+                    <p class="text-base font-semibold text-primary">Issu Date: <span class="font-medium text-secondary">May 17, 2023</span></p>
+                    <p class="text-base font-semibold text-primary">Certificate ID: <span class="font-medium text-secondary">75AF7021F3-75C10554FC-75A384D3F6</span></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                    <img src="dist/img/Certificate/Certificate1.png" alt="Landing Page" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Fundamental Command Linux</h3>
+                    <p class="text-base font-semibold text-primary">Instructor: <a href="https://codingstudio.id/" class="font-medium text-secondary">Coding Studio Team</a></p>
+                    <p class="text-base font-semibold text-primary">Issu Date: <span class="font-medium text-secondary">May 8, 2022</span></p>
+                    <p class="text-base font-semibold text-primary">Certificate ID: <span class="font-medium text-secondary">75AF7021F3-75AF51EDE8-75A384D3F6</span></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                    <img src="dist/img/Certificate/Certificate2.png" alt="E-Commerce" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Fundamental Cyber Security</h3>
+                    <p class="text-base font-semibold text-primary">Instructor: <a href="https://codingstudio.id/" class="font-medium text-secondary">Coding Studio Team</a></p>
+                    <p class="text-base font-semibold text-primary">Issu Date: <span class="font-medium text-secondary">May 8, 2022</span></p>
+                    <p class="text-base font-semibold text-primary">Certificate ID: <span class="font-medium text-secondary">75AF7021F3-75AF609064-75A384D3F6</span></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                    <img src="dist/img/Certificate/Belajar JavaScript Dasar.jpg" alt="Tribute Page" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Javascript Dasar</h3>
+                    <p class="text-base font-semibold text-primary">Instructor: <a href="https://www.codepolitan.com/" class="font-medium text-secondary">Codepolitan</a></p>
+                    <p class="text-base font-semibold text-primary">Issu Date: <span class="font-medium text-secondary">April 28, 2022</span></p>
+                    <p class="text-base font-semibold text-primary">Certificate ID: <span class="font-medium text-secondary">-</span></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                    <img src="dist/img/Certificate/Menguasai Framework CodeIgniter.jpg" alt="Tribute Page" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Framework CodeIgniter</h3>
+                    <p class="text-base font-semibold text-primary">Instructor: <a href="https://www.codepolitan.com/" class="font-medium text-secondary">Codepolitan</a></p>
+                    <p class="text-base font-semibold text-primary">Issu Date: <span class="font-medium text-secondary">April 24, 2022</span></p>
+                    <p class="text-base font-semibold text-primary">Certificate ID: <span class="font-medium text-secondary">-</span></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                    <img src="dist/img/Certificate/Pemrograman-Komputer.jpg" alt="Tribute Page" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Mengenal Pemograman Komputer</h3>
+                    <p class="text-base font-semibold text-primary">Instructor: <a href="https://www.codepolitan.com/" class="font-medium text-secondary">Codepolitan</a></p>
+                    <p class="text-base font-semibold text-primary">Issu Date: <span class="font-medium text-secondary">Oct 01, 2021</span></p>
+                    <p class="text-base font-semibold text-primary">Certificate ID: <span class="font-medium text-secondary">-</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Serticate Section End -->
+
     <!-- Portfolio Section Start -->
     <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
       <div class="container">
@@ -201,26 +263,12 @@
             <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
             <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Project Terbaru</h2>
             <p class="text-md font-medium text-secondary md:text-lg">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus porro consequuntur alias, commodi nemo enim aliquam ipsam obcaecati? Assumenda, ipsam?
+                Masih dalam tahap pengembangan
             </p>
           </div>
         </div>
 
         <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/1.png" alt="Landing Page" width="w-full" />
-            </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Landing Page Sandhika Galih</h3>
-            <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto! Aliquam, corporis.</p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/2.png" alt="E-Commerce" width="w-full" />
-            </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">E-Commerce</h3>
-            <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto! Aliquam, corporis.</p>
-          </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/3.png" alt="Technical Documentation" width="w-full" />
@@ -247,7 +295,7 @@
           <div class="mx-auto mb-16 text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Clients</h4>
             <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit facilis velit!</p>
+            <p class="text-md font-medium text-secondary md:text-lg">Masih dalam tahap pengembangan</p>
           </div>
         </div>
 
@@ -259,12 +307,12 @@
             <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/gojek.svg" alt="Gojek" />
             </a>
-            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+            <!-- <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/tokopedia.svg" alt="Tokopedia" />
             </a>
             <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/traveloka.svg" alt="traveloka" />
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -278,7 +326,7 @@
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
             <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam perspiciatis blanditiis dolores?</p>
+            <p class="text-md font-medium text-secondary md:text-lg">Masih dalam tahap pengembangan</p>
           </div>
         </div>
 
@@ -331,7 +379,7 @@
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
             <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, sed.</p>
+            <p class="text-md font-medium text-secondary md:text-lg">Masih dalam tahap pengembangan</p>
           </div>
         </div>
 
@@ -363,11 +411,11 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
-            <h2 class="mb-5 text-4xl font-bold text-white">WPU</h2>
+            <h2 class="mb-5 text-4xl font-bold text-white">NandaTritona</h2>
             <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
-            <p>sandhikagalih@gmail.com</p>
-            <p>Jl. Dr. Setiabudhi No. 193</p>
-            <p>Bandung</p>
+            <p>nandhatritona@gmail.com</p>
+            <p>Kelayang, Indragiri Hulu, 29352</p>
+            <p>Indonesia</p>
           </div>
           <div class="mb-12 w-full px-4 md:w-1/3">
             <h3 class="mb-5 text-xl font-semibold text-white">Kategori Tulisan</h3>
@@ -396,6 +444,9 @@
                 <a href="#portfolio" class="mb-3 inline-block text-base hover:text-primary">Portfolio</a>
               </li>
               <li>
+                <a href="#certificate" class="mb-3 inline-block text-base hover:text-primary">Sertifikat</a>
+              </li>
+              <li>
                 <a href="#clients" class="mb-3 inline-block text-base hover:text-primary">Clients</a>
               </li>
               <li>
@@ -410,23 +461,9 @@
 
         <div class="w-full border-t border-slate-700 pt-10">
           <div class="mb-5 flex items-center justify-center">
-            <!-- Youtube -->
-            <a
-              href="https://youtube.com/webprogrammingunpas"
-              target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <title>YouTube</title>
-                <path
-                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                />
-              </svg>
-            </a>
-
             <!-- Instagram -->
             <a
-              href="https://instagram.com/sandhikagalih"
+              href="https://instagram.com/nandathreetona"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
             >
@@ -440,7 +477,7 @@
 
             <!-- Twitter -->
             <a
-              href="https://twitter.com/sandhikagalih"
+              href="https://twitter.com/nandatritona"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
             >
@@ -454,7 +491,7 @@
 
             <!-- TikTok -->
             <a
-              href="https://tiktok.com/@sandhika.galih"
+              href="https://tiktok.com/@nandatritona"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
             >
@@ -468,7 +505,7 @@
 
             <!-- LinkedIn -->
             <a
-              href="https://linkedin.com/in/sandhikagalih"
+              href="https://linkedin.com/in/nanda-threetona-43a477276/"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
             >
@@ -481,7 +518,7 @@
             </a>
           </div>
           <p class="text-center text-xs font-medium text-slate-500">
-            Dibuat dengan <span class="text-pink-500">❤️</span> oleh <a href="https://instagram.com/sandhikagalih" target="_blank" class="font-bold text-primary">Sandhika Galih</a>, menggunakan
+            Dibuat dengan <span class="text-pink-500">❤️</span> oleh <a href="https://instagram.com/nandathreetona" target="_blank" class="font-bold text-primary">Nanda Tritona</a>, menggunakan
             <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.
           </p>
         </div>
